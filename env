@@ -1,0 +1,41 @@
+# host options
+PORT=3003
+HOST='http://localhost'
+FRONTEND_HOST='http://localhost:3000'
+
+# mongo uri
+#MONGO_URI='mongodb://mongo/test'
+MONGO_URI='mongodb://localhost:27017/tronbots'
+
+#rss uri
+RSS_URL=''
+
+# secrets for api token
+SECRET_TOKEN_ACCESS='secret'
+EXPIRE_TOKEN_ACCESS='1d'
+
+SECRET_TOKEN_REFRESH='secret'
+EXPIRE_TOKEN_REFRESH='30d'
+
+SECRET_TOKEN_RESTORE_PASSWORD='secret'
+EXPIRE_TOKEN_RESTORE_PASSWORD='5min'
+
+TOKEN_LIMIT_COUNT_DIVICE=5
+
+#mail options
+API_KEY_MAILGUN='iGac88_24'
+DOMAIN_MAILGUN='tronbots.es'
+#FROM_DEFAULT_MAIL='Test <new-app@test.com>'
+FROM_DEFAULT_MAIL='test@tronbots.com'
+
+# Stripe API keys - see https://stripe.com/docs/development/quickstart#api-keys
+STRIPE_PUBLISHABLE_KEY="pk_test_51LpqAWBuRn8TDh9hmBKB7RGIiYkqQpK1tPc5U7t3TGDbDV1TSlNAw1iszo9V7UTbQBO7wckHfJoBnwfC8hfqV6un00aKgqD1nZ"
+STRIPE_SECRET_KEY="sk_test_51LpqAWBuRn8TDh9hI7yJHEuE8SsJEU3XzUePMHrE5wKJ4hw5Uy2bcR6OaT0AV53ZiWJSsJP1Vat4SfhPgWZpJCwu00sBttivMi"
+
+# Required to verify signatures in the webhook handler.
+# See README on how to use the Stripe CLI to test webhooks
+STRIPE_WEBHOOK_SECRET="whsec_e15138d03017f573d3ad7e873654e80b79b9e72ec20db3571a22ba9ac9974d6a"
+
+# Path to front-end implementation. Note: PHP has it's own front end implementation.
+STATIC_DIR=../../client/html
+DOMAIN=http://localhost:3003
